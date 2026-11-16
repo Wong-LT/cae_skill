@@ -4,7 +4,18 @@
 
 ## 中文
 
-`cae_skill` 帮助仿真工程师把工程需求整理成一份**可以在求解前核对的分析方案**。你可以直接给 Codex 一份项目书、一张标注图，也可以从一句话开始。AI 先整理已有资料，只补问那些会改变模型或结论的问题。
+`cae_skill` 是面向仿真工程师的 Codex 技能，负责把工程需求整理成项目任务书和求解前方案。它服务于下面这条完整的 CAE 工作流。
+
+**项目文件（输入） → CAE 软件（系统） → 分析报告（输出）**
+
+项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。当前版本的交付点在求解前，工程师可以先核对模型将怎样建立，以及将保存哪些数据来回答自己的问题。
+
+### 两种输入方式
+
+1. **有现成项目书**　把文件、路径或正文交给 AI，也可以附上图纸和材料表。AI 先读资料，代填标准任务书，只追问会改变建模或判断的缺项。
+2. **没有项目书**　AI 先问“你想分析什么对象，最想弄清什么？”随后只问必要的关键事实。例如，知道材料牌号后，AI 可查取所需物性，列出建议值和来源，交工程师一次核对。
+
+两种方式生成同一格式的项目文件。第一部分用工程语言概述需求，第二部分把条件、假设和输出要求整理成结构化记录。
 
 安装后，你可以在 Codex 中发送这样的请求。
 
@@ -21,7 +32,18 @@
 
 ## English
 
-`cae_skill` is a Codex skill for simulation engineers. It turns a project brief, an annotated drawing, or a short conversation into a **simulation plan you can review before a solver run**. It reads the available information first and asks follow-up questions when the answer would change the model or the conclusion.
+`cae_skill` is a Codex skill for simulation engineers. It prepares the project specification and pre-solve plan for the following CAE workflow.
+
+**Project file (input) → CAE software (system) → Analysis report (output)**
+
+The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. The current skill delivers the specification and plan before the solver run, so an engineer can review the model choices and check that the planned outputs will answer each question.
+
+### Two ways to provide input
+
+1. **Start from an existing brief.** Share a file, its path, or the text, along with any relevant drawings or material sheets. The AI reads these first, fills in the standard specification, and asks only about gaps that could change a modeling decision or conclusion.
+2. **Start with a guided interview.** The AI begins by asking what you want to analyze and what you want to find out. It then asks for the few facts it needs. For example, give it the material grade and it can look up relevant properties, cite its sources, and present the proposed values for review.
+
+Both routes produce the same project file. The first part summarizes the engineering request in plain language. The second records conditions, assumptions, and output requests in a structured format.
 
 Once installed, you can start with a request like this in Codex.
 
