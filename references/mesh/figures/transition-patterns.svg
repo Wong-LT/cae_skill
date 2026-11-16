@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="317" viewBox="0 0 720 317" role="img" aria-label="上下两排普通四边形网格之间的列数过渡，A 为四段变两段，B 为六段变两段">
+  <rect width="720" height="317" fill="#fff"/>
+  <path d="M360 15V298" fill="none" stroke="#cbd4d8" stroke-width="1"/>
+  <g fill="#1e3947" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="28" y="34" font-size="23" font-weight="700">A</text>
+    <text x="62" y="34" font-size="19">4 → 2</text>
+  </g>
+  <rect x="28" y="54" width="300" height="242" fill="#f7f9fa"/>
+  <rect x="28" y="102" width="300" height="120" fill="#dcebf0"/>
+  <path d="M103 54L103 102 M178 54L178 102 M253 54L253 102 M103 102L103 147 M28 222L103 147 M178 102L178 147 M103 147L178 147 M178 147L178 222 M253 147L328 222 M253 102L253 147 M178 147L253 147 M178 222L178 296" fill="none" stroke="#506775" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M28 102L103 102 M103 102L178 102 M178 102L253 102 M253 102L328 102 M28 222L178 222 M178 222L328 222" fill="none" stroke="#2f4a58" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M28 54L103 54 M28 54L28 102 M103 54L178 54 M178 54L253 54 M253 54L328 54 M328 54L328 102 M28 102L28 222 M328 102L328 222 M28 296L178 296 M28 222L28 296 M328 222L328 296 M178 296L328 296" fill="none" stroke="#203d4b" stroke-width="2.3" stroke-linecap="round"/>
+  <g fill="#1e3947" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="392" y="34" font-size="23" font-weight="700">B</text>
+    <text x="426" y="34" font-size="19">6 → 2</text>
+  </g>
+  <rect x="392" y="54" width="300" height="242" fill="#f7f9fa"/>
+  <rect x="392" y="102" width="300" height="120" fill="#dcebf0"/>
+  <path d="M442 54L442 102 M492 54L492 102 M542 54L542 102 M592 54L592 102 M642 54L642 102 M442 102L442 172 M392 222L442 172 M492 102L492 172 M442 172L492 172 M542 102L542 222 M492 172L542 222 M592 102L592 172 M542 222L592 172 M642 102L642 172 M592 172L642 172 M642 172L692 222 M542 222L542 296" fill="none" stroke="#506775" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M392 102L442 102 M442 102L492 102 M492 102L542 102 M542 102L592 102 M592 102L642 102 M642 102L692 102 M392 222L542 222 M542 222L692 222" fill="none" stroke="#2f4a58" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M392 54L442 54 M392 54L392 102 M442 54L492 54 M492 54L542 54 M542 54L592 54 M592 54L642 54 M642 54L692 54 M692 54L692 102 M392 102L392 222 M692 102L692 222 M392 296L542 296 M392 222L392 296 M692 222L692 296 M542 296L692 296" fill="none" stroke="#203d4b" stroke-width="2.3" stroke-linecap="round"/>
+</svg>

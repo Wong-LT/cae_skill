@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="936" height="224" viewBox="0 0 936 224" role="img"
+     aria-labelledby="title description">
+  <title id="title">Persistent volume mesh coverage across three attempts</title>
+  <desc id="description">In A, B and C, grid lines mark regions with volume elements.
+    The same outlined, pale amber region has no volume elements in all three states.
+    This is a qualitative schematic. Its geometry and grid do not represent an actual
+    model, entity counts or element counts.</desc>
+
+  <defs>
+    <pattern id="mesh-grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 0 0.7 H 16 M 0.7 0 V 16" fill="none" stroke="#708d93" stroke-width="1.4"/>
+    </pattern>
+    <g id="coverage">
+      <rect width="240" height="144" fill="#edf4f4"/>
+      <rect width="240" height="144" fill="url(#mesh-grid)"/>
+      <rect x="128" y="32" width="80" height="64" fill="#ffebc4" stroke="#795d36" stroke-width="2.5"/>
+      <rect width="240" height="144" fill="none" stroke="#30494f" stroke-width="2.4"/>
+    </g>
+    <path id="arrow" d="M 0 0 H 28 M 21 -6.5 L 28 0 L 21 6.5" fill="none"
+          stroke="#6c7d83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </defs>
+
+  <rect width="936" height="224" fill="#fff"/>
+  <g fill="#263b42" font-family="Arial, 'DejaVu Sans', sans-serif" font-weight="bold" font-size="25">
+    <text x="24" y="39">A</text>
+    <text x="348" y="39">B</text>
+    <text x="672" y="39">C</text>
+  </g>
+  <use xlink:href="#coverage" x="24" y="56"/>
+  <use xlink:href="#arrow" x="292" y="128"/>
+  <use xlink:href="#coverage" x="348" y="56"/>
+  <use xlink:href="#arrow" x="616" y="128"/>
+  <use xlink:href="#coverage" x="672" y="56"/>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "cae_skill"
+  short_description: "读项目书或简短访谈，代填任务书并交工程师核对单元类型、场输出和历史输出"
+  default_prompt: "用 $cae_skill 帮我开始一个 CAE 分析项目。"

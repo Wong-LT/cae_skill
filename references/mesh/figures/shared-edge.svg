@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="230" viewBox="0 0 720 230" role="img" aria-label="两区共享接口节点与两侧几何重合但节点独立的对照">
+  <rect width="720" height="230" fill="#fff"/>
+  <path d="M360 19V212" fill="none" stroke="#ccd6d9" stroke-width="1"/>
+  <g fill="#1d3b4b" font-family="sans-serif" font-weight="700" font-size="23">
+    <text x="22" y="39">A</text>
+    <text x="381" y="39">B</text>
+  </g>
+  <g>
+    <rect x="23" y="64" width="158" height="144" fill="#e1eff4"/>
+    <rect x="181" y="64" width="158" height="144" fill="#fff0d7"/>
+    <rect x="381" y="64" width="151" height="144" fill="#e1eff4"/>
+    <rect x="547" y="64" width="150" height="144" fill="#fff0d7"/>
+  </g>
+  <g fill="none" stroke="#627885" stroke-width="1.45">
+    <path d="M75.667 64V208 M128.333 64V208 M233.667 64V208 M286.333 64V208 M23 100H339 M23 136H339 M23 172H339"/>
+    <path d="M431.333 64V208 M481.667 64V208 M597 64V208 M647 64V208 M381 100H532 M547 100H697 M381 136H532 M547 136H697 M381 172H532 M547 172H697"/>
+  </g>
+  <g fill="none" stroke="#27434e" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M23 64H339V208H23Z M181 64V208"/>
+    <path d="M381 64H532V208H381Z M547 64H697V208H547Z"/>
+  </g>
+  <g fill="#1d3b4b">
+    <circle cx="181" cy="64" r="4.4"/>
+    <circle cx="181" cy="100" r="4.4"/>
+    <circle cx="181" cy="136" r="4.4"/>
+    <circle cx="181" cy="172" r="4.4"/>
+    <circle cx="181" cy="208" r="4.4"/>
+    <circle cx="532" cy="64" r="4.4"/>
+    <circle cx="532" cy="100" r="4.4"/>
+    <circle cx="532" cy="136" r="4.4"/>
+    <circle cx="532" cy="172" r="4.4"/>
+    <circle cx="532" cy="208" r="4.4"/>
+  </g>
+  <g fill="#fff" stroke="#1d3b4b" stroke-width="1.9">
+    <rect x="543.2" y="60.2" width="7.6" height="7.6" rx="0.2"/>
+    <rect x="543.2" y="96.2" width="7.6" height="7.6" rx="0.2"/>
+    <rect x="543.2" y="132.2" width="7.6" height="7.6" rx="0.2"/>
+    <rect x="543.2" y="168.2" width="7.6" height="7.6" rx="0.2"/>
+    <rect x="543.2" y="204.2" width="7.6" height="7.6" rx="0.2"/>
+  </g>
+</svg>
