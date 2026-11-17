@@ -32,6 +32,8 @@
 - **CAE 项目任务书**整理分析目的、对象、工况和判据。材料牌号已知时，AI 可查找相关物性，列出来源、单位和适用条件，并标明哪些取值待确认。[Markdown 模板](assets/CAE项目任务书.md) · [Word 模板](assets/CAE项目任务书.docx)
 - **求解前方案预览**列出建模假设、单元类型、网格计划、场输出和历史输出。每个报告指标都关联到需要保存的数据。[预览模板](assets/仿真方案预览.md) · [Abaqus 与 Ansys Mechanical 设置示例](references/单元与输出设置.md)
 
+工程师可以直接说“先比较哪种方案更硬”或“判断位移是否超限”。AI 据此拟定各指标的首轮精度。报告末尾指出哪些位置值得加密、哪些区域可以尝试粗化、分别影响什么结果，以及重算可能花费的时间。工程师决定是否继续。
+
 随包的网格经验包含局部加密、粗细过渡、共享界面和扫掠案例，也记录了反复补划后如何查清哪些实体仍然没有体单元。[网格经验与配图](references/mesh/abaqus_cae经验.md)
 
 ## English
@@ -63,5 +65,7 @@ The skill produces two editable documents. The bundled templates and reference n
 
 - **CAE project specification.** Records the objective, geometry, operating conditions, and acceptance criteria. When a material grade is known, the skill can look up relevant properties and record their sources, units, and applicable conditions for review. [Markdown template](assets/CAE项目任务书.md) · [Word template](assets/CAE项目任务书.docx)
 - **Pre-solve plan.** Sets out modeling assumptions, element choices, meshing strategy, and field and history output requests. Each requested result is linked to the data the solver needs to save. [Preview template](assets/仿真方案预览.md) · [Abaqus and Ansys Mechanical examples](references/单元与输出设置.md)
+
+An engineer can ask which design is stiffer or whether displacement exceeds a limit. The skill uses that intent to propose an initial accuracy target for each quantity of interest. The report identifies where refinement or coarsening could help, which results it may affect, and the expected cost of another run. The engineer chooses whether to rerun.
 
 The mesh notes cover local refinement, transitions between fine and coarse meshes, shared interfaces, and sweep meshing. One worked case shows how to identify solid regions that still contain no volume elements after repeated meshing attempts. [Mesh notes and diagrams](references/mesh/abaqus_cae经验.md)
