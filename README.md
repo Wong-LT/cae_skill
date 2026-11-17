@@ -4,7 +4,7 @@
 
 ## 中文
 
-`cae_skill` 是面向仿真工程师的 Codex 技能，负责把工程需求整理成项目任务书和求解前方案。它服务于下面这条完整的 CAE 工作流。
+`cae_skill` 是面向仿真工程师的开放技能，负责把工程需求整理成项目任务书和求解前方案。它服务于下面这条完整的 CAE 工作流。
 
 **项目文件（输入） → CAE 软件（系统） → 分析报告（输出）**
 
@@ -13,11 +13,11 @@
 ### 两种输入方式
 
 1. **有现成项目书**　把文件、路径或正文交给 AI，也可以附上图纸和材料表。AI 先读资料，代填标准任务书，只追问会改变建模或判断的缺项。
-2. **没有项目书**　AI 先问“你想分析什么对象，最想弄清什么？”随后只问必要的关键事实。例如，知道材料牌号后，AI 可查取所需物性，列出建议值和来源，交工程师一次核对。
+2. **没有项目书**　从分析对象和工程目标谈起，已有描述可直接用于任务书。例如，知道材料牌号后，AI 可查取所需物性，列出建议值和来源，交工程师一次核对。
 
 两种方式生成同一格式的项目文件。第一部分用工程语言概述需求，第二部分把条件、假设和输出要求整理成结构化记录。
 
-安装后，你可以在 Codex 中发送这样的请求。
+下面是 Codex 中的一种调用方式。其他智能体可通过各自的技能加载方式使用同一套说明和模板。
 
 > 用 $cae_skill 帮我规划一块带孔板的拉伸分析。我想看满载时孔边的应力分布，以及测点 P 在整个加载过程中的位移曲线。
 
@@ -32,7 +32,7 @@
 
 ## English
 
-`cae_skill` is a Codex skill for simulation engineers. It prepares the project specification and pre-solve plan for the following CAE workflow.
+`cae_skill` is an open skill for simulation engineers. It prepares the project specification and pre-solve plan for the following CAE workflow.
 
 **Project file (input) → CAE software (system) → Analysis report (output)**
 
@@ -41,11 +41,11 @@ The project file defines the model scope, operating conditions, and questions th
 ### Two ways to provide input
 
 1. **Start from an existing brief.** Share a file, its path, or the text, along with any relevant drawings or material sheets. The AI reads these first, fills in the standard specification, and asks only about gaps that could change a modeling decision or conclusion.
-2. **Start with a guided interview.** The AI begins by asking what you want to analyze and what you want to find out. It then asks for the few facts it needs. For example, give it the material grade and it can look up relevant properties, cite its sources, and present the proposed values for review.
+2. **Start with a guided interview.** Describe what you want to analyze and what you need to find out. The agent follows up on gaps that affect the analysis. For example, give it the material grade and it can look up relevant properties, cite its sources, and present the proposed values for review.
 
 Both routes produce the same project file. The first part summarizes the engineering request in plain language. The second records conditions, assumptions, and output requests in a structured format.
 
-Once installed, you can start with a request like this in Codex.
+In Codex, you can invoke the skill as shown below. Other agents can use the same instructions and templates through their own skill loaders.
 
 > Use $cae_skill to plan a tensile analysis of a plate with a hole. I need the stress distribution around the hole at full load and the displacement history at point P throughout loading.
 
