@@ -8,7 +8,7 @@
 
 **项目文件（输入） → CAE 软件（系统） → 分析报告（输出）**
 
-项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。当前版本的交付点在求解前，工程师可以先核对模型将怎样建立，以及将保存哪些数据来回答自己的问题。
+项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。求解前，工程师可核对建模选择、输出请求和计划交付的原生图件。已有 ODB 且需要结果报告时，先从 Abaqus/CAE 或 Viewer 导出并展示应力、应变、位移等原生云图和变形动画，再补充由数据绘制的曲线、统计和工况对比。
 
 ### 两种输入方式
 
@@ -36,7 +36,7 @@
 
 **Project file (input) → CAE software (system) → Analysis report (output)**
 
-The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. The current skill delivers the specification and plan before the solver run, so an engineer can review the model choices and check that the planned outputs will answer each question.
+The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. Before the run, engineers can review the model choices, output requests, and planned native figures. When an ODB is available and a results report is requested, export and present native stress, strain, and displacement contours and deformation animations in Abaqus/CAE or Viewer first. Follow these with derived plots, statistics, and comparisons.
 
 ### Two ways to provide input
 
