@@ -6,7 +6,11 @@
 
 `cae_skill` 是面向仿真工程师的开放技能，负责把工程需求整理成项目任务书和求解前方案。它服务于下面这条完整的 CAE 工作流。
 
-**项目文件（输入） → CAE 软件（系统） → 分析报告（输出）**
+**项目文件（输入） → 工程处理流程（系统） → 分析报告（输出）**
+
+几何建模 → 几何清理与理想化 → 网格划分 → 物理建模 → 求解 → 结果处理与报告
+
+工具选择由工程师按环节指定。需要新建几何时默认推荐 SOLIDWORKS，其余未指定环节默认用 Abaqus。例如，已有 AutoCAD 图纸可作为几何输入，也可指定 HyperMesh 划网。
 
 项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。求解前，工程师可核对建模选择、输出请求和计划交付的原生图件。Abaqus 结果报告先展示从 ODB 导出的原生云图和变形动画，再用曲线和统计解释结果。
 
@@ -34,7 +38,11 @@
 
 `cae_skill` is an open skill for simulation engineers. It prepares the project specification and pre-solve plan for the following CAE workflow.
 
-**Project file (input) → CAE software (system) → Analysis report (output)**
+**Project file (input) → Engineering workflow (system) → Analysis report (output)**
+
+Geometry creation → Geometry cleanup and idealization → Meshing → Physics definition → Solution → Postprocessing and reporting
+
+Engineers can choose tools for individual stages. SOLIDWORKS is the default recommendation for new geometry. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
 
 The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. Before the run, engineers can review the model choices, output requests, and planned native figures. Abaqus reports open with native contour plots and deformation animations exported from the ODB. Derived curves and statistics follow where they help explain the results.
 
