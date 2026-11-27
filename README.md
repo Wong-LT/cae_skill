@@ -14,6 +14,14 @@
 
 项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。求解前，工程师可核对建模选择、输出请求和计划交付的原生图件。Abaqus 结果报告先展示从 ODB 导出的原生云图和变形动画，再用曲线和统计解释结果。
 
+### 默认后台计算
+
+**提交前先确认计算资源。** AI 会列出执行机器的物理核心数、逻辑线程数、总内存和当前可用内存，给出本次 CPU 数与内存推荐值及依据，等待工程师确认后提交。
+
+**提交 job 默认采用无窗口后台计算。** Windows 用户可以在任务管理器中查看对应求解进程的运行情况、CPU 和内存占用。具体分析步、增量和完成状态可从作业日志查看，提交后会给出作业与日志位置。
+
+**需要打开软件界面或实时可视化时，请单独说明。** 例如“这次请打开界面查看变形”。报告所需的原生云图和动画仍按任务要求导出。
+
 ### 两种输入方式
 
 1. **有现成项目书**　把文件、路径或正文交给 AI，也可以附上图纸和材料表。AI 先读资料，代填标准任务书，只追问会改变建模或判断的缺项。
@@ -47,6 +55,14 @@ Geometry creation → Geometry cleanup and idealization → Meshing → Physics 
 Engineers can choose tools for individual stages. SOLIDWORKS is the default recommendation for new geometry. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
 
 The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. Before the run, engineers can review the model choices, output requests, and planned native figures. Abaqus reports open with native contour plots and deformation animations exported from the ODB. Derived curves and statistics follow where they help explain the results.
+
+### Background calculation by default
+
+**Review computing resources before submission.** The agent reports the execution machine's physical cores, logical threads, total RAM, and currently available RAM. It recommends a CPU allocation and memory budget with a brief rationale, then waits for the engineer's confirmation before submitting the job.
+
+**Jobs are submitted for background calculation without opening a window.** On Windows, Task Manager shows the solver process and its CPU and memory usage. Solver logs provide the analysis step, increment, and completion status. The submission response identifies the job and its log location.
+
+**Explicitly request a visible interface or live visualization when needed.** For example, “Open the interface so I can inspect the deformation.” Native contour plots and animations requested for the report are still exported as planned.
 
 ### Two ways to provide input
 
