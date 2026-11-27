@@ -14,6 +14,10 @@
 
 项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。求解前，工程师可核对建模选择、输出请求和计划交付的原生图件。Abaqus 结果报告先展示从 ODB 导出的原生云图和变形动画，再用曲线和统计解释结果。
 
+### 文献如何进入方案
+
+每个项目的预览都呈现“问题 → 检索 → 适用性比较 → 建模选择 → 验证”。AI 从已有资料和可靠来源查找依据，说明材料、工况及边界条件与当前项目的关系，再给出拟采用的方法与验证计划。依据摘要保留原文链接或 DOI、实际阅读范围和待补信息，便于工程师核对。常规分析可以复用适用的已知依据，复杂问题按缺口深入检索。
+
 ### 默认后台计算
 
 **提交前先确认计算资源。** AI 会列出执行机器的物理核心数、逻辑线程数、总内存和当前可用内存，给出本次 CPU 数与内存推荐值及依据，等待工程师确认后提交。
@@ -55,6 +59,10 @@ Geometry creation → Geometry cleanup and idealization → Meshing → Physics 
 Engineers can choose tools for individual stages. SOLIDWORKS is the default recommendation for new geometry. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
 
 The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. Before the run, engineers can review the model choices, output requests, and planned native figures. Abaqus reports open with native contour plots and deformation animations exported from the ODB. Derived curves and statistics follow where they help explain the results.
+
+### How evidence informs the plan
+
+Every project preview follows “question → research → applicability comparison → modeling choice → validation.” The agent reviews existing material and reliable sources, compares their materials, operating conditions, and boundaries with the current problem, and proposes methods and validation steps. The evidence summary includes source links or DOIs, the content actually reviewed, and remaining gaps. Routine analyses can reuse applicable evidence; complex problems call for further research where it affects the decision.
 
 ### Background calculation by default
 
