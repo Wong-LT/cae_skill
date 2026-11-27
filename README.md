@@ -10,13 +10,15 @@
 
 几何建模 → 几何清理与理想化 → 网格划分 → 物理建模 → 求解 → 结果处理与报告
 
-工具选择由工程师按环节指定。需要新建几何时默认推荐 SOLIDWORKS，其余未指定环节默认用 Abaqus。例如，已有 AutoCAD 图纸可作为几何输入，也可指定 HyperMesh 划网。
+工具选择由工程师按环节指定。简单几何和小型验证算例默认在 Abaqus 中建模，复杂结构或多零件装配默认推荐 SOLIDWORKS，其余未指定环节默认用 Abaqus。例如，已有 AutoCAD 图纸可作为几何输入，也可指定 HyperMesh 划网。
 
 项目文件记录对象、工况和报告要回答的问题。按这套设计，CAE 软件依据同一份输入设置模型、网格和求解输出，再从计算结果中提取各项指标，形成分析报告。求解前，工程师可核对建模选择、输出请求和计划交付的原生图件。Abaqus 结果报告先展示从 ODB 导出的原生云图和变形动画，再用曲线和统计解释结果。
 
 ### 文献如何进入方案
 
 每个项目的预览都呈现“问题 → 检索 → 适用性比较 → 建模选择 → 验证”。AI 从已有资料和可靠来源查找依据，说明材料、工况及边界条件与当前项目的关系，再给出拟采用的方法与验证计划。依据摘要保留原文链接或 DOI、实际阅读范围和待补信息，便于工程师核对。常规分析可以复用适用的已知依据，复杂问题按缺口深入检索。
+
+研究文献以 JCR Q1 的 SCI 论文为主，Q2 仅作补充。优秀硕博论文以博士论文为主，院校在相关学科的 THE、U.S. News、软科或 QS 任一世界榜单前 100 即可，研究院校众多的热门专业可放宽至前 150。两类来源满足任一渠道即可进入候选。硕博论文优先参考论文奖项，结合导师在相关方向的学术贡献，再通过全文判断研究问题、方法、证据与结论的逻辑衔接及验证支持，记录判断依据。JCR 优先采用论文发表同年的指标，尚未发布时暂用最新可查分区，并注明年份与学科。
 
 ### 默认后台计算
 
@@ -25,6 +27,10 @@
 **提交 job 默认采用无窗口后台计算。** Windows 用户可以在任务管理器中查看对应求解进程的运行情况、CPU 和内存占用。具体分析步、增量和完成状态可从作业日志查看，提交后会给出作业与日志位置。
 
 **需要打开软件界面或实时可视化时，请单独说明。** 例如“这次请打开界面查看变形”。报告所需的原生云图和动画仍按任务要求导出。
+
+### 中断后继续
+
+对已有项目说“继续”，AI 根据已确认方案、项目记录、当前进程和日志识别进度。运行中的 job 继续跟踪，完成的 job 进入结果处理；停止的 job 根据原因及可用重启动数据提出续算或重算方案。项目记录保留作业、输入、结果及下一步的位置。
 
 ### 两种输入方式
 
@@ -56,13 +62,15 @@
 
 Geometry creation → Geometry cleanup and idealization → Meshing → Physics definition → Solution → Postprocessing and reporting
 
-Engineers can choose tools for individual stages. SOLIDWORKS is the default recommendation for new geometry. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
+Engineers can choose tools for individual stages. Simple geometry and small verification models default to Abaqus modeling. Complex structures and multi-part assemblies default to SOLIDWORKS. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
 
 The project file defines the model scope, operating conditions, and questions the report should answer. In this design, the CAE software uses the same specification to build and mesh the model, run the analysis, and extract the requested results for the report. Before the run, engineers can review the model choices, output requests, and planned native figures. Abaqus reports open with native contour plots and deformation animations exported from the ODB. Derived curves and statistics follow where they help explain the results.
 
 ### How evidence informs the plan
 
 Every project preview follows “question → research → applicability comparison → modeling choice → validation.” The agent reviews existing material and reliable sources, compares their materials, operating conditions, and boundaries with the current problem, and proposes methods and validation steps. The evidence summary includes source links or DOIs, the content actually reviewed, and remaining gaps. Routine analyses can reuse applicable evidence; complex problems call for further research where it affects the decision.
+
+Research papers primarily come from SCI journals in JCR Q1, with Q2 used only as supplementary evidence. Strong graduate theses, especially doctoral dissertations, are also eligible when the institution ranks in the relevant subject within the global top 100 in any one of THE, U.S. News, ShanghaiRanking, or QS. For popular disciplines studied at many institutions, this can extend to the top 150. Either route qualifies a source for consideration. Thesis awards receive priority in screening, alongside the academic contributions of the supervisor in the relevant field. Full-text assessment examines the logical connection between the research question, assumptions, methods, evidence, and conclusions, including validation and applicability. The assessment records its supporting sources. Prefer the JCR metric year matching the paper publication year. If that year is not yet released, use the latest verifiable quartile and record its year and subject category.
 
 ### Background calculation by default
 
@@ -71,6 +79,10 @@ Every project preview follows “question → research → applicability compari
 **Jobs are submitted for background calculation without opening a window.** On Windows, Task Manager shows the solver process and its CPU and memory usage. Solver logs provide the analysis step, increment, and completion status. The submission response identifies the job and its log location.
 
 **Explicitly request a visible interface or live visualization when needed.** For example, “Open the interface so I can inspect the deformation.” Native contour plots and animations requested for the report are still exported as planned.
+
+### Resume a project
+
+Ask to continue an existing project. The agent uses the confirmed plan, saved project records, current processes, and solver logs to identify progress. Running jobs remain under observation, completed jobs proceed to postprocessing, and stopped jobs are assessed for restart or a new run using the available restart data. The project record identifies the inputs, job, results, and next action.
 
 ### Two ways to provide input
 
