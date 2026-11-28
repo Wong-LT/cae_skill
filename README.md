@@ -8,7 +8,7 @@
 
 **项目文件（输入） → 工程处理流程（系统） → 分析报告（输出）**
 
-几何建模 → 几何清理与理想化 → 网格划分 → 物理建模 → 求解 → 结果处理与报告
+几何建模 → 几何清理与理想化 → 网格划分 → 物理建模 → 核对最终求解输入 → 求解 → 结果处理与报告
 
 工具选择由工程师按环节指定。简单几何和小型验证算例默认在 Abaqus 中建模，复杂结构或多零件装配默认推荐 SOLIDWORKS，其余未指定环节默认用 Abaqus。例如，已有 AutoCAD 图纸可作为几何输入，也可指定 HyperMesh 划网。
 
@@ -21,6 +21,8 @@
 研究文献以 JCR Q1 的 SCI 论文为主，Q2 仅作补充。优秀硕博论文以博士论文为主，院校在相关学科的 THE、U.S. News、软科或 QS 任一世界榜单前 100 即可，研究院校众多的热门专业可放宽至前 150。两类来源满足任一渠道即可进入候选。硕博论文优先参考论文奖项，结合导师在相关方向的学术贡献，再通过全文判断研究问题、方法、证据与结论的逻辑衔接及验证支持，记录判断依据。JCR 优先采用论文发表同年的指标，尚未发布时暂用最新可查分区，并注明年份与学科。
 
 ### 默认后台计算
+
+AI 在提交前按实际求解器自行核对最终输入和生效的模型设置。额外诊断作业（如 Abaqus `datacheck`）可按需建议，仅在工程师明确要求时运行。
 
 **提交前先确认计算资源。** AI 会列出执行机器的物理核心数、逻辑线程数、总内存和当前可用内存，给出本次 CPU 数与内存推荐值及依据，等待工程师确认后提交。
 
@@ -60,7 +62,7 @@
 
 **Project file (input) → Engineering workflow (system) → Analysis report (output)**
 
-Geometry creation → Geometry cleanup and idealization → Meshing → Physics definition → Solution → Postprocessing and reporting
+Geometry creation → Geometry cleanup and idealization → Meshing → Physics definition → Check final solver input → Solution → Postprocessing and reporting
 
 Engineers can choose tools for individual stages. Simple geometry and small verification models default to Abaqus modeling. Complex structures and multi-part assemblies default to SOLIDWORKS. The other stages default to Abaqus unless specified. Existing AutoCAD drawings can serve as geometry inputs, and HyperMesh can be selected for meshing.
 
@@ -73,6 +75,8 @@ Every project preview follows “question → research → applicability compari
 Research papers primarily come from SCI journals in JCR Q1, with Q2 used only as supplementary evidence. Strong graduate theses, especially doctoral dissertations, are also eligible when the institution ranks in the relevant subject within the global top 100 in any one of THE, U.S. News, ShanghaiRanking, or QS. For popular disciplines studied at many institutions, this can extend to the top 150. Either route qualifies a source for consideration. Thesis awards receive priority in screening, alongside the academic contributions of the supervisor in the relevant field. Full-text assessment examines the logical connection between the research question, assumptions, methods, evidence, and conclusions, including validation and applicability. The assessment records its supporting sources. Prefer the JCR metric year matching the paper publication year. If that year is not yet released, use the latest verifiable quartile and record its year and subject category.
 
 ### Background calculation by default
+
+Before submission, the agent checks the selected solver’s final input and active model settings against the agreed plan. It may suggest a separate diagnostic job, such as Abaqus `datacheck`, and runs it only at the engineer’s explicit request.
 
 **Review computing resources before submission.** The agent reports the execution machine's physical cores, logical threads, total RAM, and currently available RAM. It recommends a CPU allocation and memory budget with a brief rationale, then waits for the engineer's confirmation before submitting the job.
 
