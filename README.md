@@ -1,3 +1,5 @@
+<img src="docs/images/nailong.webp" alt="Nailong in a kung fu stance in front of a campus hall" width="168" align="right">
+
 # cae_skill
 
 [中文](#中文) · [English](#english)
